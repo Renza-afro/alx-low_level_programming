@@ -11,7 +11,7 @@
 int main(void)
 {
 int x, y, z, v;
-for (x = 48; x = 57; x++)
+for (x = 48; x <= 57; x++)
 {
 for (y = 48; y <= 57; y++)
 {
@@ -24,9 +24,9 @@ if (((z + v) > (x + y) && z >= x) || x < z)
 putchar(x);
 putchar(y);
 putchar(' ');
-putchat(z);
+putchar(z);
 putchar(v);
-if (x + y + z + v == 227 && c == 57)
+if (x + y + z + v == 227 && x == 57)
 {
 break;
 }
@@ -40,7 +40,7 @@ putchar(' ');
 }
 }
 }
-putchar('\n);
+putchar('\n');
 
 return (0);
 }
