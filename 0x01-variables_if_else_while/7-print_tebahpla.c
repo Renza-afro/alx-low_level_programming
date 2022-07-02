@@ -13,7 +13,7 @@ int main(void)
 int alphabetReverse;
 for (alphabetReverse = 'z'; alphabetReverse >= 'a'; alphabetReverse--)
 {
-putchar(a);
+putchar(alphabetReverse);
 }
 putchar('\n');
 
