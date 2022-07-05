@@ -52,7 +52,7 @@ _putchar('\n');
 }
 else
 {
-break;
+_putchar('\n');
 }
 }
 
