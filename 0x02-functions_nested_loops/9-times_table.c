@@ -30,6 +30,6 @@ _putchar((z % 10) + 48);
 }
 }
 }
-_putcha('\n');
+_putchar('\n');
 }
 
