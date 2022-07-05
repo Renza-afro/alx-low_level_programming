@@ -1,4 +1,4 @@
-#inclide "main.h"
+#include "main.h"
 
 /**
 * print_times_table-> print table
@@ -23,7 +23,7 @@ if (j == 0)
 {
 _putchar('0' + r);
 }
-esle if (r >= 10)
+else if (r >= 10)
 {
 _putchar(' ');
 _putchar('0' + (r / 10));
