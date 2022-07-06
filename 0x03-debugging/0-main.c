@@ -3,6 +3,11 @@
 #include <time.h>
 #include <stdlib.h>
 
+/**
+* postitive_or_negative-> check
+* @i: integer
+* Return: 0
+*/
 void postitive_or_negative(int i)
 {
 
