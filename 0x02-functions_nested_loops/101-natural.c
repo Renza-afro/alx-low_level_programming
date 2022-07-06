@@ -26,3 +26,4 @@ total_sum = total_sum + i;
 }
 printf("%d\n", total_sum);
 return (0);
+}
