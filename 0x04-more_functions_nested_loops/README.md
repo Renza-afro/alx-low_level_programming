@@ -1,1 +1,1 @@
-Readme file for 0x04-more functions nested loops directory
+readme file in 0x04-more functions nested loops dir
