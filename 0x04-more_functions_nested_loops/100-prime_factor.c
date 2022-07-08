@@ -18,7 +18,7 @@ unsigned int x = 0;
 if  (n < 0)
 {
 x = -n;
-_putchar('-');
+_putchar('\n');
 }
 
 else
