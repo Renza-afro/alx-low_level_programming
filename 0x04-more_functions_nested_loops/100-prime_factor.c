@@ -18,7 +18,7 @@ unsigned int x = 0;
 if  (n < 0)
 {
 x = -n;
-_putchar('\n');
+_putchar('-');
 }
 
 else
@@ -32,4 +32,5 @@ print_number(x / 10);
 }
 
 _putchar((x % 10) + '0');
+_putchar('\n');
 }
