@@ -1,36 +1,22 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-
-int _putchar(char c);
 
 /**
-* print_number -> prime numbers+
-* @n: params an integer
-* Return: nothing
+* main -  calculate largest prime of 612852475143
+* Return: always(Success)
 */
 
-void print_number(int n)
+int main(void)
 {
+long int n = 612852475143;
+long int pn;
 
-unsigned int x = 0;
-
-if  (n < 0)
+for (pn = 2; pn < n; pn++)
 {
-x = -n;
-_putchar('-');
+if (n % pn == 0)
+{
+n = n / pn;
 }
-
-else
-{
-x = n;
 }
-
-if (x / 10)
-{
-print_number(x / 10);
-}
-
-_putchar((x % 10) + '0');
-_putchar('\n');
+printf("%ld\n", pn);
+return (0);
 }
