@@ -2,13 +2,12 @@
 #include <string.h>
 
 /**
-* _strlen- returns string length
+* _strlen-> returns string length
 * @s: input char
-* Return: length of string
+* Return: returns length of the string
 */
 
 int _strlen(char *s)
 {
-
 return (strlen(s));
 }
