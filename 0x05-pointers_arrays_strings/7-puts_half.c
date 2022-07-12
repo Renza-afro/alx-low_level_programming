@@ -1,11 +1,10 @@
+#include "main.h"
 #include <string.h>
 
 /**
 * puts_half-> prints half string, new line
 * @str: string
 */
-
-int _putchar(void);
 
 void puts_half(char *str)
 {
