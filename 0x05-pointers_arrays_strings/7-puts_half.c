@@ -15,6 +15,6 @@ b = a / 2 + 1;
 else
 b = a / 2;
 for (c = b; c < a; a++)
-_putchar(str[a]);
+_putchar(str[c]);
 _putchar('\n');
 }
