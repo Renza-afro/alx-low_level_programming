@@ -3,7 +3,6 @@
 /**
 * puts2-> every other character of string
 * @str: string
-* Return: no
 */
 
 void puts2(char *str)
