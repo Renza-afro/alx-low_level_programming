@@ -11,6 +11,17 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-strncat(dest, src, n);
-return (dest);
-} 
+
+char *result = dest;
+
+while (*dest)
+dest++;
+while (*src)
+{
+*dest = *src;
+src++;
+dest++;
+}
+*dest = '\0';
+return (result);
+}
