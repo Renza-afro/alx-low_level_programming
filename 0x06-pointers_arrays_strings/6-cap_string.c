@@ -6,24 +6,27 @@
 * Return: string
 */
 
-char *cap_string(char *i)
+char *cap_string(char *x)
 {
-int a = 0, x;
-int len = 13;
-char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+int i = 0;
+int z = 1;
+char *word = x;
+char *spesh = " \t\n;,.!?"(){}";
 
-while (i[a])
+while (*x)
 {
-x = 0;
-
-while (x < len)
+if (z)
 {
-if ((a == 0 || i[a - 1] == spc[i]) && (i[a] >= 97 && i[a] <= 122))
-i[a] = i[a] - 32;
-
+if (*x >= 'a' && *x <= 'z')
+*x -= 32;
+z = 0;
+}
+for (i = 0; spesh[i]; i++)
+{
+if (*x == spesh[i])
+z = 1;
+}
 x++;
 }
-a++;
-}
-return (i);
+return (word);
 }
