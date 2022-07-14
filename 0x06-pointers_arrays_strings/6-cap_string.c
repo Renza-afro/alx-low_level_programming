@@ -2,31 +2,26 @@
 
 /**
 * *cap_string-> capitalizes all words of a string
-* @i: string
+* @x: string
 * Return: string
 */
 
 char *cap_string(char *x)
 {
-int i = 0;
-int z = 1;
-char *word = x;
-char *spesh = " \t\n;,.!?"(){}";
+char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+int len = 13;
+int a = 0, i;
 
-while (*x)
+while (x[a])
 {
-if (z)
+i = 0;
+while (i < len)
 {
-if (*x >= 'a' && *x <= 'z')
-*x -= 32;
-z = 0;
+if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+x[a] = x[a] - 32;
+i++;
 }
-for (i = 0; spesh[i]; i++)
-{
-if (*x == spesh[i])
-z = 1;
+a++;
 }
-x++;
-}
-return (word);
+return (x);
 }
