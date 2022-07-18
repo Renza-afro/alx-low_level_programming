@@ -9,22 +9,27 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-int x = 0, y = 0;
-while (haystack[x])
+int a = 0, b = 0;
+
+while (haystack[a])
 {
-while (needle[y])
+while (needle[b])
 {
-if (haystack[x + y] != needle[y])
+if (haystack[a + b] != needle[b])
 {
 break;
 }
-y++;
+
+b++;
 }
-if (needle[y] == '\0')
+
+if (needle[b] == '\0')
 {
-return (haystack + x);
+return (haystack + a);
 }
-x++
+
+a++;
 }
+
 return ('\0');
 }
