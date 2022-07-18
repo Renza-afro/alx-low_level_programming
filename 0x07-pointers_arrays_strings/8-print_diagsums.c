@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * print_diagsums-> print su of two diagonals og sqaure matrix
