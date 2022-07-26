@@ -26,8 +26,7 @@ sum -= 5, coins++;
 while (sum >= 2)
 sum -= 2, coins++;
 while (sum >= 1)
-sum--;
-coins++;
+sum--, coins++;
 printf("%d\n", coins);
 return (0);
 }
