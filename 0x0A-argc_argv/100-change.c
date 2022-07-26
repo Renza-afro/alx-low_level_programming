@@ -30,4 +30,4 @@ sum--;
 coins++;
 printf("%d\n", coins);
 return (0);
-
+}
