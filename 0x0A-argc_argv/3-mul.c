@@ -7,14 +7,19 @@
 * @y: args
 * Return: 1 if error. 0
 */
-int main(int x, char **y)
+int main(int x, char *y[])
 {
-if (x < 3)
+int num1 = 0, num2 = 0;
+if (x == 3)
 {
-printf("%s", "Error'\n'");
+num1 = atoi(y[1]);
+num2 = atoi(y[2]);
+printf("%d\n", num1 * num2);
+}
+else
+{
+printf("Error\n");
 return (1);
 }
-
-printf("%d\n", atoi(*(y + 1)) * atoi(*(y + 2)));
 return (0);
 }
