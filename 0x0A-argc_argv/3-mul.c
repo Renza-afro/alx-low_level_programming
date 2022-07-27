@@ -11,7 +11,7 @@ int main(int x, char **y)
 {
 if (x < 3)
 {
-printf("%d", "Error'\n'");
+printf("%s", "Error'\n'");
 return (1);
 }
 
