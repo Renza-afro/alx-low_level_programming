@@ -30,7 +30,7 @@ pnt = malloc(new_size);
 if (pnt == NULL)
 return (NULL);
 for (x = 0; x < old_size && x < new_size; x++)
-p[x] = ((char *)ptr)[x];
+pnt[x] = ((char *)ptr)[x];
 free(ptr);
 return (pnt);
 }
