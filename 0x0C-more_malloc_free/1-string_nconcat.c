@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
 * string_nconcat-> concatenate two strings
 * @s1: string 1
