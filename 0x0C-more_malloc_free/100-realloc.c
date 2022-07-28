@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stddef.h>
-
+#include <stdlib.h>
 /**
 * _realloc-> reallocates memory using malooc, free
 * @ptr: pointer
