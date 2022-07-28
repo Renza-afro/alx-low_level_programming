@@ -26,7 +26,7 @@ return (NULL);
 }
 if (old_size == new_size)
 return (ptr);
-pnt = malloc(new_size0;
+pnt = malloc(new_size);
 if (pnt == NULL)
 return (NULL);
 for (x = 0; x < old_size && x < new_size; x++)
