@@ -22,7 +22,7 @@ while (*(s2 + len2) != '\0')
 len2++;
 if (n >= len2)
 n = len2;
-str = maloc(sizeof(char) * (len1 + n + 1));
+str = malloc(sizeof(char) * (len1 + n + 1));
 if (str == NULL)
 return (NULL);
 for (x = 0; x < len1; x++)
