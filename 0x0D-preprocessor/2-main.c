@@ -5,9 +5,8 @@
 * Return: 0
 */
 
-char main(void)
+int main(void)
 {
-putchar(__FILE__);
-putchar('\n');
+printf("%s\n", __FILE__);
 return (0);
 }
