@@ -18,7 +18,7 @@ int nameA = 0, ownerA = 0;
 if (name != NULL && owner != NULL)
 {
 nameA = _strlen(name) + 1;
-onwerA = _strlen(owner) + 1;
+ownerA = _strlen(owner) + 1;
 poppy = malloc(sizeof(dog_t));
 
 if (poppy == NULL)
