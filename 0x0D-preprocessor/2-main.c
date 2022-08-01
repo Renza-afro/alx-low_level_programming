@@ -5,7 +5,7 @@
 * Return: 0
 */
 
-int main(void)
+char main(void)
 {
 putchar(__FILE__);
 putchar('\n');
