@@ -1,9 +1,10 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <stdio.h>
 
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
+/**
+* int _strlen(char *s);
+* char *_strcpy(char *dest, char *src);
+*/
 
 /**
 * new_dog-> create new dog
