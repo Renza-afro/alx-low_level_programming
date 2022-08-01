@@ -7,7 +7,7 @@
 
 int main(void)
 {
-putchar(_NAME_);
+putchar(__NAME__);
 putchar('\n');
 return (0);
 }
