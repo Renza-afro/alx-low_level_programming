@@ -14,35 +14,35 @@ char *_strcpy(char *dest, char *src);
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *poppy;
-int name_1 = 0, owner_1 = 0;
+dog_t *cute;
+int nameA = 0, ownerA = 0;
 if (name != NULL && owner != NULL)
 {
-name_1 = _strlen(name) + 1;
-owner_1 = _strlen(owner) + 1;
-poppy = malloc(sizeof(dog_t));
+nameA = _strlen(name) + 1;
+ownerA = _strlen(owner) + 1;
+cute = malloc(sizeof(dog_t));
 
-if (poppy == NULL)
+if (cute == NULL)
 return (NULL);
 
-poppy->name = malloc(sizeof(char) * name_1);
-if (poppy->name == NULL)
+cute->name = malloc(sizeof(char) * nameA);
+if (cute->name == NULL)
 {
-free(poppy);
+free(cute);
 return (NULL);
 }
-poppy->owner = malloc(sizeof(char) * owner_1);
-if (poppy->owner == NULL)
+cute->owner = malloc(sizeof(char) * ownerA);
+if (cute->owner == NULL)
 {
-free(poppy->name);
-free(poppy);
+free(cute->name);
+free(cute);
 return (NULL);
 }
-poppy->name = _strcpy(poppy->name, name);
-poppy->owner = _strcpy(poppy->owner, owner);
-poppy->age = age;
+cute->name = _strcpy(cute->name, name);
+cute->owner = _strcpy(cute->owner, owner);
+cute->age = age;
 }
-return (poppy);
+return (cute);
 }
 
 /**
