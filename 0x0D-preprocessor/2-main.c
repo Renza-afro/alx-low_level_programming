@@ -7,7 +7,7 @@
 
 int main(void)
 {
-putchar(__NAME__);
+putchar(__FILE__);
 putchar('\n');
 return (0);
 }
