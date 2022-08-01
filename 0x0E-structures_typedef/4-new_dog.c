@@ -9,7 +9,7 @@ char *_strcpy(char *dest, char *src);
 * @name: dog name
 * @age: dog age
 * @owner: dog owner
-* Return: no
+* Return: name
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -45,6 +45,23 @@ return (poppy);
 }
 
 /**
+* _strlen->string length
+* @s: string
+* Return: string
+*/
+int _strlen(char *s)
+{
+int count = 0;
+for (; *s != '\0'; s++)
+{
+count++;
+}
+return (count);
+}
+
+/*string copy function*/
+
+/**
 * _strcpy-> copies a string
 * @dest: destination
 * @src: string
@@ -59,19 +76,4 @@ dest[x] = src[x];
 }
 dest[x++] = '\0';
 return (dest);
-}
-
-/**
-* _strlen->string length
-* @s: string
-* Return: string
-*/
-int _strlen(char *s)
-{
-int count = 0;
-for (; *s != '\0'; s++)
-{
-count++;
-}
-return (count);
 }
