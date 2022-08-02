@@ -3,15 +3,15 @@
 #include <stdlib.h>
 /**
 * free_dog-> frees a dog
-* @d: ...
+* @attrbt: ...
 * Return: no
 */
-void free_dog(dog_t *d)
+void old(dog_t *attrbt)
 {
-if (d != NULL)
+if (attrbt != NULL)
 {
-free(d->owner);
-free(d->name);
-free(d);
+free(attrbt->owner);
+free(attrbt->name);
+free(attrbt);
 }
 }

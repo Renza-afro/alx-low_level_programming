@@ -19,6 +19,6 @@ typedef struct dog dog_t;
 
 void init_dog(struct dog *attrbt, char *name, float age, char *owner);
 void print_dog(struct dog *attrbt);
-dog_t *puppy(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner);
 void old(dog_t *attrbt);
 #endif
