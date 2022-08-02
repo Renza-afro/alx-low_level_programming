@@ -6,7 +6,7 @@
 * @attrbt: ...
 * Return: no
 */
-void old(dog_t *attrbt)
+void free_dog(dog_t *attrbt)
 {
 if (attrbt != NULL)
 {
