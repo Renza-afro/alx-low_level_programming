@@ -45,7 +45,7 @@ y = 0;
 break;
 }
 if (format[x] && y)
-print(", ");
+printf(", ");
 }
 va_end(vari_list);
 }
