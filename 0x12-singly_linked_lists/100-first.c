@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
 * before_main_method-> execute before main method
 * Return: no
