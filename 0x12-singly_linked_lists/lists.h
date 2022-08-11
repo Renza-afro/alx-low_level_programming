@@ -1,5 +1,5 @@
-#ifndef _LIST_H
-#define _LIST_H
+#ifndef _LIST_H_
+#define _LIST_H_
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -21,4 +21,5 @@ struct list_s *next;
 
 /* prototype */
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 #endif
