@@ -15,6 +15,6 @@ p_node = (*head)->next;
 pre_node = *head;
 *head = p_node;
 }
-*head = p_node;
+*head = pre_node;
 return (*head);
 }
