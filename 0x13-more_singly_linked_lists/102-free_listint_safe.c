@@ -8,7 +8,7 @@
 size_t free_listint_safe(listint_t **h)
 {
 size_t x = 0, y;
-listsint_t *temp, *chck, *copy = *h;
+listint_t *temp, *chck, *copy = *h;
 
 while (*h)
 {
