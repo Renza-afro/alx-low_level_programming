@@ -12,7 +12,7 @@ if (head)
 {
 while (*head)
 {
-temp = *temp;
+temp = *head;
 *head = temp->next;
 free(temp);
 }
