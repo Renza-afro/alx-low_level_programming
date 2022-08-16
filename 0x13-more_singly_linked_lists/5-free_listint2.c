@@ -14,8 +14,14 @@ if (head)
 while (*head)
 {
 temp = *head;
-*head = temp->next;
+*head = (*head)->next;
 free(temp);
 }
 }
+else
+{
+return;
+}
+free(*head);
+head = 0;
 }
