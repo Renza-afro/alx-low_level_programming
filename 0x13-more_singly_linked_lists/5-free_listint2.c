@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib.>
+#include <stdlib.h>
 /**
 * free_listsint2-> frees listint list
 * @head: ...
