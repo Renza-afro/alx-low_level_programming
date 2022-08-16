@@ -8,9 +8,9 @@
 size_t listint_len(const listint_t *h)
 {
 unsigned int x = 0;
-const listint_t *temp_h h;
+const listint_t *temp_h = h;
 
-for (; temp_h; temp_h = temp_h.next)
+for (; temp_h; temp_h = temp_h->next)
 x++;
 return (x);
 }
