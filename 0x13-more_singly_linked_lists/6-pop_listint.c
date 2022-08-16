@@ -16,6 +16,6 @@ x = del_head->n;
 free(del_head);
 }
 else
-x = 0
+x = 0;
 return (x);
 }
