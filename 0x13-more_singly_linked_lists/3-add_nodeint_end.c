@@ -21,7 +21,7 @@ else
 {
 temp_h = *head;
 while (temp_h->next)
-temp_h = temp->next;
+temp_h = temp_h->next;
 temp_h->next = new_node;
 }
 return (new_node);
