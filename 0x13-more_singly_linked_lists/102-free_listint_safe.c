@@ -7,27 +7,27 @@
 */
 size_t free_listint_safe(listint_t **h)
 {
-size_t x = 0, y;
-listint_t *temp, *chck, *copy = *h;
+size_t i = 0, j;
+listint_t *temp, *check, *copy = *h;
 
 while (*h)
 {
-x++;
+i++;
 temp = *h;
 *h = (*h)->next;
 free(temp);
-chck = copy;
-y = 0;
-while (y < x)
+check = copy;
+j = 0;
+while (j < i)
 {
-if (*h == chck)
+if (*h == check)
 {
 *h = NULL;
-return (x);
+return (i);
 }
-chck = chck->next;
-y++;
+check = check->next;
+j++;
 }
 }
-return (x);
+return (i);
 }
