@@ -11,8 +11,8 @@ unsigned int x = 0;
 const listint_t *temp_h = h;
 while (temp_h)
 {
-printf("%d\n", temp_h.n);
-temp_h = temp_h.next;
+printf("%d\n", temp_h->n);
+temp_h = temp_h->next;
 x++;
 }
 return (x);
