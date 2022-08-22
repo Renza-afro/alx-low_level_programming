@@ -30,12 +30,12 @@ fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
 if (text_content == NULL)
-return (closed(fd) == -1 ? -1 : 1);
+return (close(fd) == -1 ? -1 : 1);
 length = _strlen(text_content);
-if (write(fd, text_content, lenghth) != length)
+if (write(fd, text_content, length) != length)
 {
-closed(fd);
+close(fd);
 return (-1);
 }
-return (closed(fd) == -1 ? -1 : 1);
+return (close(fd) == -1 ? -1 : 1);
 }
