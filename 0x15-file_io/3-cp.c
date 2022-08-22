@@ -61,7 +61,7 @@ exit(close(fd_from) == -1 ? error_method(fd_from, NULL) :
 close(fd_to) == -1 ? error_method(fd_to, NULL) :
 error_method(98, file_from));
 if (write(fd_to, &buffer, read_val) == -1)
-exit(end_func(99, file_to));
+exit(error_method(99, file_to));
 read_val = read(fd_from, &buffer, BUFLEN);
 }
 return (close(fd_from) == -1 ? error_method(fd_from, NULL) :
