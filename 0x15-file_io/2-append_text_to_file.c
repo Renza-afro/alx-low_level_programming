@@ -30,8 +30,8 @@ if (fd == -1)
 return (-1);
 if (text_content == NULL)
 return (close(fd) == -1 ? -1 : 1);
-len = _strlen(text_content);
-if (write(fd, text_content, len) == -1)
+length = _strlen(text_content);
+if (write(fd, text_content, length) == -1)
 {
 close(fd);
 return (-1);
