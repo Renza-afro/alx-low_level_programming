@@ -12,7 +12,7 @@ new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
-new->prev = NUL;
+new->prev = NULL;
 new->next = *head;
 if (*head != NULL)
 (*head)->prev = new;
